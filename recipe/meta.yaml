@@ -1,5 +1,5 @@
 {% set name = "uncrustify" %}
-{% set version = "0.70.1" %}
+{% set version = "0.71.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/uncrustify/uncrustify/archive/{{ name }}-{{ version }}.tar.gz
-    sha256: ad0a7b1f68aa3527d1b89d177d192385fe41b830d46167bde3c3b578e9b0ed06
+    sha256: 403a0f34463c0d6b0fbf230d8a03b7af9f493faa235208417793350db062003c
 
 build:
   number: 0
