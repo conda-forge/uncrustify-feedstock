@@ -27,8 +27,7 @@ test:
 
 about:
   home: http://uncrustify.sourceforge.net/
-  license: GPL-2.0
-  license_family: GPL
+  license: GPL-2.0-only
   license_file: COPYING
   summary: |
     A source code beautifier for C, C++, C#, ObjectiveC, D, Java, Pawn and VALA
