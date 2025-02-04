@@ -1,5 +1,5 @@
 {% set name = "uncrustify" %}
-{% set version = "0.77.0" %}
+{% set version = "0.78.1" %}
 
 package:
   name: {{ name }}
@@ -38,3 +38,4 @@ extra:
     - traversaro
     - seanyen
     - wolfv
+
