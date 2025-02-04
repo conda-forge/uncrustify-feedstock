@@ -16,8 +16,8 @@ build:
 
 requirements:
   build:
-    - {{ compiler('cxx') }}              # [not win]
-    - {{ compiler('c') }}                # [not win]
+    - {{ compiler('cxx') }}
+    - {{ compiler('c') }}
     - ninja
     - cmake
 
