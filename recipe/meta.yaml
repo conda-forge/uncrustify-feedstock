@@ -1,5 +1,5 @@
 {% set name = "uncrustify" %}
-{% set version = "0.74.0" %}
+{% set version = "0.77.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/uncrustify/uncrustify/archive/{{ name }}-{{ version }}.tar.gz
-    sha256: b7d24e256e7f919aa96289ac8167ac98340df7faa2d34b60d2242dc54700caaa
+    sha256: d48828e7a2bbf6de0813807ad679c256680299102915f2943e60bb2152120d8f
 
 build:
   number: 0
@@ -16,8 +16,9 @@ build:
 
 requirements:
   build:
-    - {{ compiler('cxx') }}              # [not win]
-    - {{ compiler('c') }}                # [not win]
+    - {{ compiler('cxx') }}
+    - {{ compiler('c') }}
+    - {{ stdlib('c') }}
     - ninja
     - cmake
 
