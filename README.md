@@ -9,7 +9,6 @@ Package license: GPL-2.0-only
 
 Summary: A source code beautifier for C, C++, C#, ObjectiveC, D, Java, Pawn and VALA
 
-
 Current build status
 ====================
 
