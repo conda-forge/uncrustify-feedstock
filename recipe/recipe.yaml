@@ -1,0 +1,43 @@
+schema_version: 1
+
+context:
+  name: uncrustify
+  version: "0.81.0"
+
+package:
+  name: ${{ name }}
+  version: ${{ version }}
+
+source:
+  - url: https://github.com/uncrustify/uncrustify/archive/${{ name }}-${{ version }}.tar.gz
+    sha256: 484623dc16b92206adc6ac0770077c6c67c6e441102148c2a121a19549330ff9
+
+build:
+  number: 2
+
+requirements:
+  build:
+    - ${{ compiler('cxx') }}
+    - ${{ compiler('c') }}
+    - ${{ stdlib('c') }}
+    - ninja
+    - cmake
+
+tests:
+  - script:
+      - uncrustify --version
+
+about:
+  license: GPL-2.0-only
+  license_file: COPYING
+  summary: |
+    A source code beautifier for C, C++, C#, ObjectiveC, D, Java, Pawn and VALA
+
+
+  homepage: http://uncrustify.sourceforge.net/
+
+extra:
+  recipe-maintainers:
+    - traversaro
+    - seanyen
+    - wolfv
